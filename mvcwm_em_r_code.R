@@ -4,7 +4,7 @@ library(cluster)
 cwm <- function(X, y, k = 1:5,
                 init_type = c("kmeans", "kmedoids", "kmedians"),
                 criterion = c("BIC", "AIC"),
-                max_iter = 1000, tol = 1e-10) {
+                max_iter = 1000, tol = 1e-8) {
   
   init_type <- match.arg(init_type)
   criterion <- match.arg(criterion)
