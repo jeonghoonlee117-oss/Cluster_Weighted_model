@@ -17,7 +17,7 @@ $$
 p(w=m,z=k)=0 \quad \text{for } k\notin G_m
 $$
 
-이 관계는 코드에서 컴포넌트 → 클러스터 매핑 배열 하나로 구현된다.
+이 관계는 코드에서 컴포넌트 → 클러스터 매핑 배열 하나로 구현된다. 단, 하나의 컴포넌트는 하나의 군집에 속한다는 전제가 가정되어 있다.
 
 ```python
 comp2cluster = np.zeros(K, dtype=int)
