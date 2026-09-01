@@ -51,7 +51,7 @@ $$
 Algorithm 1의 3)단계, 즉 논문 Eq. 9의 reduced model
 
 $$
-p^R(x,y) = \sum_{m=1}^{M}\left\{\sum_{k\in G_m}\eta_{mk}\,\phi_p(x;\mu_k,\Sigma_k)\,\phi_1\left(y;(1,x^\top)\beta_m,\sigma_k^2\right)\right\}
+p^R(x,y) = \sum_{m=1}^{M}\sum_{k\in G_m}\eta_{mk}\,\phi_p(x;\mu_k,\Sigma_k)\,\phi_1\big(y;(1,x^\top)\beta_m,\sigma_k^2\big)
 $$
 
 을 특정 파티션 `groups` 하에서 수렴할 때까지 EM으로 적합시키는 함수이다.
